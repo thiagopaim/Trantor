@@ -1,0 +1,27 @@
+/* imagens ---------------------------------------- */
+.wp-caption {
+	padding: 5px;
+	background: #eee;
+}
+	.wp-caption-text {
+		margin: 5px 0 0 0;
+		font-size: .75em;
+		text-align: center;
+		color: #444;
+	}
+
+	/* alihamentos -------------------------------- */
+	.alignleft {
+		display: inline;
+		float: left;
+		margin: 5px 15px 15px 0;
+	}
+	.alignright {
+		display: inline;
+		float: right;
+		margin: 5px 0 15px 15px;
+	}
+	.aligncenter {
+		display: block;
+		margin: 15px auto;
+	}

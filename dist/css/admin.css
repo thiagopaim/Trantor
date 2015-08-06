@@ -1,0 +1,55 @@
+#preview-action #post-preview,
+#publishing-action input#publish,
+#save-action #save-post,
+#post_tag input {
+	width: 258px !important;
+}
+.add-image {
+	width: 252px !important;
+	margin: 15px 0 0 0 !important;
+}
+#save-action #save-post,
+#post_tag input {
+	margin: 0 0 10px 0;
+}
+#publishing-action input#publish {
+	margin-top: 10px;
+}
+.submitdelete:before {
+	margin: 0 3px 0 0;
+	vertical-align: top;
+	font-family: 'dashicons';
+	font-size: 14px;
+	content: '\f182';
+}
+/* hide some stuff ----------------- */
+.toplevel_page_wp-user-avatar,
+/* admin bar ----------------------- */
+#wp-admin-bar-comments,
+#wp-admin-bar-new-content,
+#wp-admin-bar-wp-logo {
+	display: none !important;
+}
+/* corrections --------------------- */
+span.required {
+	color: red;
+}
+.media-modal .media-sidebar .setting span,
+.media-modal .media-sidebar .setting input,
+.media-modal .media-sidebar .setting textarea {
+	display: block;
+	width: 100%;
+	text-align: right;
+}
+/* editor ------------------------- */
+.mceContentBody { 
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+/* custom welcome messsage -------- */
+.custom-welcome-panel-content {
+	padding: 0 0 25px 13px;
+}
+hr {
+	margin: 15px 0;
+}
