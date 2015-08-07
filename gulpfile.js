@@ -1,12 +1,12 @@
-var gulp 		 = require('gulp'),
+var 	gulp 		 = require('gulp'),
 	concat 		 = require('gulp-concat'),
 	minifyCSS 	 = require('gulp-minify-css'),
-	autoprefixer = require('gulp-autoprefixer'),
+	autoprefixer 	 = require('gulp-autoprefixer'),
 	rename 		 = require('gulp-rename'),
 	watch		 = require('gulp-watch'),
-	browserSync  = require('browser-sync');
+	browserSync  	 = require('browser-sync');
 
-// minifica e concatena
+// minifica e concatena css
 gulp.task('styles', function(){
 	gulp.src('./assets/css/*.css')
 		.pipe(minifyCSS({
@@ -21,10 +21,10 @@ gulp.task('watch', function() {
     gulp.watch('./assets/css/*.css', ['styles']);
 });
 
-// browser releaod
+// atualiza browser
 gulp.task('browser-sync', function() {
 	browserSync({
-		proxy: "http://10.96.153.121/trantor/"
+		proxy: '[COLOCAR O IP E A PASTA DO WORDPRESS AQUI]'
 	});
 });
 
