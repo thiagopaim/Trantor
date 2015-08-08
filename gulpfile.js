@@ -5,7 +5,6 @@ var gulp					= require('gulp'),
 		autoprefixer	= require('gulp-autoprefixer'),
 		rename				= require('gulp-rename'),
 		watch					= require('gulp-watch'),
-		browserSyn		= require('browser-sync');
 		browserSync		= require('browser-sync');
 
 // minifica e concatena folha de estilos
