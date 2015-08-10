@@ -132,7 +132,7 @@ if ( ! isset( $content_width ) ) $content_width = 980;
 // adiciona responsive embed
 // ------------------------------------- //
 function embed_html( $html ) {
-    return '<div class="embed-responsive embed-responsive-16by9">' . $html . '</div>';
+    return '<div class="flex-video widescreen">' . $html . '</div>';
 }
 add_filter( 'embed_oembed_html', 'embed_html', 10, 3 );
 add_filter( 'video_embed_html', 'embed_html' ); // Jetpack
