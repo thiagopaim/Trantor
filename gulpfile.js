@@ -1,10 +1,10 @@
-var gulp					= require('gulp'),
-		concat				= require('gulp-concat'),
-		minifyCSS			= require('gulp-minify-css'),
-		uglifyJS			= require('gulp-uglify'),
+var gulp						= require('gulp'),
+		concat					= require('gulp-concat'),
+		minifyCSS				= require('gulp-minify-css'),
+		uglifyJS				= require('gulp-uglify'),
 		autoprefixer		= require('gulp-autoprefixer'),
-		rename				= require('gulp-rename'),
-		watch				= require('gulp-watch'),
+		rename					= require('gulp-rename'),
+		watch						= require('gulp-watch'),
 		browserSync			= require('browser-sync');
 
 // minifica e concatena folha de estilos
