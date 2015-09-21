@@ -22,18 +22,6 @@
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/js/jquery.js"></script>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/js/foundation.js"></script>
 
-	<!-- fancybox -->
-	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/fancybox/fancybox.js"></script>
-	
-	<!-- scripts -->
-	<script>
-		$(document).foundation();
-		$('a[href$="jpg"], a[href$="png"], a[href$="jpeg"]').fancybox({
-        	padding : 5
-    	});
-	</script>
-	<!-- /scripts -->
-
 	<!-- wp footer -->
 	<?php // wp_footer(); ?>
 	<!-- /wp footer -->
@@ -44,7 +32,7 @@
 	(f[s].q=f[s].q||[]).push(arguments)},f[s].l=1*new Date();h=i.createElement(r),
 	l=i.getElementsByTagName(r)[0];h.async=1;h.src=e;l.parentNode.insertBefore(h,l)
 	})(window,document,"script","//www.google-analytics.com/analytics.js","ga");
-	ga("create", "UA-XXXXXXXX-XX", "<?php echo esc_url( home_url() ); ?>");
+	ga("create", "<?php echo esc_attr( get_option('new_option_name') ); ?>", "<?php echo esc_url( home_url() ); ?>");
 	ga("send", "pageview");
 	</script>	
 
