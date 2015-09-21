@@ -250,4 +250,33 @@ function custom_post_type() {
 add_action( 'init', 'custom_post_type', 0 );
 
 
+
+// Function used in the action hook
+function add_dashboard_widgets() {
+	wp_add_dashboard_widget('dashboard_widget', 'Google Analytics', 'google_analytics_widget');
+}
+add_action('wp_dashboard_setup', 'add_dashboard_widgets' );
+
+
+function register_my_cool_plugin_settings() {
+	register_setting( 'google-analyticsgroup', 'new_option_name' );
+//	register_setting( 'google-analyticsgroup', 'some_other_option' );
+}
+
+function google_analytics_widget() { ?>
+
+<form method="post" action="options.php" class="google-ua-form">
+
+	<?php 
+	settings_fields( 'google-analyticsgroup' );
+	do_settings_sections( 'google-analyticsgroup' ); ?>
+	
+	<p class="description" id="tagline-description">Coloque aqui o código UA do Google Analytics de seu site.</p>
+	<input type="text" name="new_option_name" class="google-ua-input" value="<?php echo esc_attr( get_option('new_option_name') ); ?>" />
+    <?php submit_button(); ?>
+
+</form>
+<?php }
+
+
 // -------------------------------------- this is all folks -------------------------------------- \\
