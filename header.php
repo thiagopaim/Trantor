@@ -1,7 +1,7 @@
 <!doctype html>
 <html <?php language_attributes(); ?> class="no-js">
 	<head>
-		<meta charset="pt-BR">
+		<meta charset="utf-8">
 		<title>
 			<?php 
 			wp_title( '' ); 
